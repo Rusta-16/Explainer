@@ -1,0 +1,89 @@
+/* Удаление отступов на странице */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Убедитесь, что ширина включает размеры границ и отступов */
+}
+
+
+/* Стили для всех кнопок */
+a {
+   text-decoration: none; /* Удаление стандартного стиля для всех кнопок */
+}
+
+/* Стили для всех списков */
+li {
+    list-style: none; /* Удаление стандартного стиля для всех списков */
+}
+::selection {
+  background-color: rgba(171, 7, 235, 0.39);
+  color: black;
+}
+body {     /*Стиль шрифта*/
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    margin-bottom: 50px ;
+}
+
+.text{
+    margin-bottom: 50px ;
+    font-size: 19px;
+}
+
+.window{
+    width: 902px;
+    height: 143px;
+    border: 2px solid #949494;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+.explainer{
+    display: flex; 
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.YourQuestens{
+    padding-bottom: 20px;
+    font-weight: 710;
+}
+.obolochcka{
+    display: none;
+}
+
+.but {
+    display: inline-block;
+    background-color: #AB07EB;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-weight: 700;
+}
+#whyButton {
+    padding: 8px 12px;
+    background-color: #464444;
+    color: #A100E0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    display:none;
+    position: absolute;
+}
